@@ -101,4 +101,4 @@ servidor.use((peticion,respuesta) => {
     respuesta.json({ error : "recurso no encontrado" });
 });
 
-servidor.listen(3000);
+servidor.listen(process.env.PORT);
